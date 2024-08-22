@@ -4,7 +4,7 @@ services:
     container_name: mysql # 컨테이너 이름
     environment:
       - MYSQL_PORT=3306 # MySQL 데이터베이스 포트 번호
-      - MYSQL_DATABASE=mysql # MySQL 데이터베이스 이름
+      - MYSQL_DATABASE=jpashop # MySQL 데이터베이스 이름
       - MYSQL_ROOT_USER=root # MySQL 데이터베이스 사용자 이름
       - MYSQL_ROOT_PASSWORD=1234 # MySQL 데이터베이스 비밀번호
     ports:
