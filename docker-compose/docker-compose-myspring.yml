@@ -1,0 +1,10 @@
+services:
+  mysql: # MySQL 데이터베이스 서비스
+    image: mysql:8.0 # 사용할 MySQL 이미지
+    container_name: mysql # 컨테이너 이름
+    environment:
+      - MYSQL_PORT=3307 # MySQL 데이터베이스 포트 번호
+      - MYSQL_DATABASE=myspring # MySQL 데이터베이스 이름
+      - MYSQL_ROOT_PASSWORD=1234 # MySQL 데이터베이스 비밀번호
+    ports:
+      - "3307:3306" # 컨테이너의 3306 포트를 노출
